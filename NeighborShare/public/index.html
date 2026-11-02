@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeighborShare | Share More, Own Less</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <a href="#home" class="logo">neighbor<span>share.</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#explore">Explore</a>
+      <a href="#requests">Requests</a>
+    </nav>
+    <a href="#add-item" class="nav-button">+ Share an item</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR COMMUNITY, CONNECTED</span>
+        <h1>Share more.<br>Own <span>less.</span></h1>
+        <p>Good things are meant to be shared. Borrow what you need, lend what you don't, and build a stronger community.</p>
+        <div class="hero-actions">
+          <a href="#explore" class="primary-btn">Explore items ↗</a>
+          <a href="#add-item" class="secondary-btn">Start sharing</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="art-circle"></div>
+        <div class="art-card card-one"><span>📷</span><strong>Camera</strong><small>Available nearby</small></div>
+        <div class="art-card card-two"><span>🚲</span><strong>Bicycle</strong><small>Shared with love</small></div>
+        <div class="floating-note">🌱 Sharing is caring!</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div><h2 id="item-count">0</h2><p>Shared items</p></div>
+      <div><h2>100%</h2><p>Community spirit</p></div>
+      <div><h2>♻️</h2><p>Less waste, more sharing</p></div>
+    </section>
+
+    <section class="section" id="explore">
+      <div class="section-heading">
+        <div><span class="eyebrow">DISCOVER YOUR COMMUNITY</span><h2>Things you can borrow.</h2><p>Find something useful from someone nearby.</p></div>
+      </div>
+      <div class="filters">
+        <input type="text" id="search" placeholder="🔍 Search items..." aria-label="Search items">
+        <select id="category-filter" aria-label="Filter by category">
+          <option value="All">All categories</option>
+          <option value="Tools">Tools</option><option value="Sports">Sports</option>
+          <option value="Books">Books</option><option value="Outdoor">Outdoor</option>
+          <option value="Electronics">Electronics</option><option value="Home">Home</option><option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="item-grid" id="item-grid"><p>Loading items...</p></div>
+    </section>
+
+    <section class="add-section" id="add-item">
+      <div class="form-info">
+        <span class="eyebrow">MAKE A DIFFERENCE</span>
+        <h2>Have something to share?</h2>
+        <p>Your unused items could make someone's day. List an item and let your community enjoy it.</p>
+        <div class="form-decoration">💚</div>
+      </div>
+      <form id="item-form" class="item-form">
+        <h3>List a new item</h3>
+        <label for="owner">Your name</label><input type="text" id="owner" placeholder="Enter your name" required maxlength="50">
+        <label for="name">Item name</label><input type="text" id="name" placeholder="e.g. Camera, Bicycle" required maxlength="80">
+        <label for="category">Category</label>
+        <select id="category" required>
+          <option value="">Choose category</option><option>Tools</option><option>Sports</option><option>Books</option>
+          <option>Outdoor</option><option>Electronics</option><option>Home</option><option>Other</option>
+        </select>
+        <label for="description">Description</label><textarea id="description" placeholder="Describe your item..." required maxlength="300"></textarea>
+        <label for="image">Image URL (optional)</label><input type="url" id="image" placeholder="https://example.com/image.jpg">
+        <button type="submit" class="primary-btn full-btn">Share my item ↗</button>
+        <p id="form-message" class="message" role="status"></p>
+      </form>
+    </section>
+
+    <section class="section requests-section" id="requests">
+      <div class="section-heading">
+        <div><span class="eyebrow">COMMUNITY ACTIVITY</span><h2>Borrow requests.</h2><p>Manage requests for your shared items.</p></div>
+        <button class="secondary-btn" id="refresh-requests">↻ Refresh</button>
+      </div>
+      <div id="request-list" class="request-list"><p>Loading requests...</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="logo">neighbor<span>share.</span></a>
+    <p>Made with 💚 for better communities.</p>
+    <small>© 2026 NeighborShare. Share more, own less.</small>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Cordless Drill",
+      "category": "Tools",
+      "description": "A cordless drill available for small home projects.",
+      "owner": "Rahul",
+      "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=600",
+      "available": true,
+      "createdAt": "2026-10-28T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Mountain Bicycle",
+      "category": "Sports",
+      "description": "A comfortable bicycle for weekend rides.",
+      "owner": "Priya",
+      "image": "https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=600",
+      "available": true,
+      "createdAt": "2026-10-29T10:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Novel Collection",
+      "category": "Books",
+      "description": "A collection of interesting novels to enjoy.",
+      "owner": "Arjun",
+      "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600",
+      "available": true,
+      "createdAt": "2026-10-30T10:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "name": "Camping Tent",
+      "category": "Outdoor",
+      "description": "A two-person tent for camping trips.",
+      "owner": "Sneha",
+      "image": "https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=600",
+      "available": true,
+      "createdAt": "2026-10-31T10:00:00.000Z"
+    }
+  ],
+  "requests": []
+}
